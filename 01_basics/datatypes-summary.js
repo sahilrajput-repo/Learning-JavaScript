@@ -33,10 +33,32 @@ const myFunction = function() {
     console.log("Hello World")
 }
 
-console.log(typeof bigNumber); //bigint
-console.log(typeof outsideTemp); //object
-console.log(typeof scoreValue); //number
-console.log(typeof myFunction); // function
-console.log(typeof myObj); // object
-console.log(typeof anotherId); // symbol
-console.log(typeof id); // symbol
+// console.log(typeof bigNumber); //bigint
+// console.log(typeof outsideTemp); //object
+// console.log(typeof scoreValue); //number
+// console.log(typeof myFunction); // function
+// console.log(typeof myObj); // object
+// console.log(typeof anotherId); // symbol
+// console.log(typeof id); // symbol
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myInstagramHandle = "sahilrajput"
+
+let anothername = myInstagramHandle
+anothername = "khushichauhan"
+
+console.log(myInstagramHandle);
+console.log(anothername);
+
+let userOne = {
+    email: "user@gmail.com"
+}
+
+let userTwo = userOne
+
+userTwo.email = "sahil@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
